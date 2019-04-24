@@ -14,7 +14,7 @@ def binarySearchQuot(numerator, denominator):
         numerator = abs(numerator)
         denominator = abs(denominator)
 
-    quotient_lists = get_range(numerator, denominator)[1]
+    quotient_lists = get_range(numerator, denominator)
 
     """ 
         For faster approach to answer, use the binary search algorithm 
@@ -74,7 +74,8 @@ def get_range(numerator, denominator):
         start += 1
         if start == 0:
             start = 1
+    
     return range_list
 
 
-print(binarySearchQuot(61, 0))
+print(binarySearchQuot(-61, 5))
